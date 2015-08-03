@@ -1,0 +1,17 @@
+body {padding-top: 70px;font-family: 'Ubuntu Condensed', sans-serif;}
+h1 {margin-top: 0 ! important;}
+h2 {color: #002a54;}
+
+.light-blue {color: #abd5ff;}
+.dark-blue {color: #002a54;}
+.blue {color: #007fff;}
+.brown {color: #544a38;}
+.orange {color: #ffa100;}
+
+#game-grid .fa {
+	font-size: 3em;
+}
+
+#game-grid .btn {
+	padding: 90px 0;
+}

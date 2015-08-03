@@ -1,0 +1,64 @@
+extends layout
+
+block content
+	.container-fluid
+		.row
+			.col-sm-12.col-md-9
+				h1.text-center
+					i.fa.fa-gamepad.orange 
+					span.brown nRPS
+				#game-grid
+					h2.text-center
+						| Set your hand!
+					.btn-group.btn-group-justified(role='group', aria-label='...')
+						.btn-group(role='group')
+							button.btn.btn-default(type='button') 
+								i.fa.fa-hand-rock-o
+								br 
+								h3 
+									| Rock
+						.btn-group(role='group')
+							button.btn.btn-default(type='button') 
+								i.fa.fa-hand-paper-o
+								br 
+								h3 
+									| Paper
+						.btn-group(role='group')
+							button.btn.btn-default(type='button') 
+								i.fa.fa-hand-scissors-o
+								br 
+								h3 
+									| Scissors
+			.col-sm-12.col-md-3
+				h2.text-center Top players
+				ul.list-group
+					li.list-group-item.list-group-item-success 
+						| Stephen Hawkin
+						span.badge 98
+					li.list-group-item.list-group-item-info 
+						| Red
+						span.badge 78
+					li.list-group-item.list-group-item-info 
+						| Sheldon Cooper
+						span.badge 77
+					li.list-group-item.list-group-item-info 
+						| Bill Gates
+						span.badge 70
+					li.list-group-item.list-group-item-warning 
+						| Rajesh Koothrappali
+						span.badge 52
+					li.list-group-item.list-group-item-warning 
+						| Maurice Moss
+						span.badge 48
+					li.list-group-item.list-group-item-warning 
+						| Nikola Poljak
+						span.badge 46
+					li.list-group-item.list-group-item-danger 
+						| Alan Guth
+						span.badge 45
+					li.list-group-item.list-group-item-danger 
+						| Donald Knuth
+						span.badge 20
+					li.list-group-item.list-group-item-danger 
+						| Noam Chomsky
+						span.badge 17

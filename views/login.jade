@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  .container-fluid
+    .row
+      .col-sm-12.col-md-9
+        h1.text-center Login to play
+          form(role='form', action="/login",method="post", style='max-width: 300px;')
+            .form-group
+                input.form-control(type='text', name="username", placeholder='Enter Username')
+            .form-group
+              input.form-control(type='password', name="password", placeholder='Password')
+            button.btn.btn-default(type='submit') Submit
+            &nbsp;
+            a(href='/')
+              button.btn.btn-primary(type="button") Cancel
+      .col-sm-12.col-md-3
+        h2.text-center Top players
+        ul.list-group
+          li.list-group-item.list-group-item-success 
+            | Steven Picado 
+            span.badge 98
+          li.list-group-item.list-group-item-info 
+            | Stephen Hawkin
+            span.badge 78
+          li.list-group-item.list-group-item-info 
+            | Sheldon Cooper
+            span.badge 77
+          li.list-group-item.list-group-item-info 
+            | Bill Gates
+            span.badge 70
+          li.list-group-item.list-group-item-warning 
+            | Rajesh Koothrappali
+            span.badge 52
+          li.list-group-item.list-group-item-warning 
+            | Maurice Moss
+            span.badge 48
+          li.list-group-item.list-group-item-warning 
+            | Nikola Poljak
+            span.badge 46
+          li.list-group-item.list-group-item-danger 
+            | Alan Guth
+            span.badge 45
+          li.list-group-item.list-group-item-danger 
+            | Donald Knuth
+            span.badge 20
+          li.list-group-item.list-group-item-danger 
+            | Noam Chomsky
+            span.badge 17
