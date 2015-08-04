@@ -1,6 +1,7 @@
 var express = require('express');
 var passport = require('passport');
 var Account = require('../models/account');
+var test = require('../schemas/test');
 var router = express.Router();
 
 
@@ -39,6 +40,14 @@ router.get('/logout', function(req, res) {
 
 router.get('/ping', function(req, res){
     res.status(200).send("pong!");
+});
+
+router.get('/users/test', function(req, res) {
+    res.setHeader('Content-Type', 'application/json');
+    test.find({},{}).lean().exec(function(err,data){
+        if(err)
+            res.json(data)
+    });
 });
 
 module.exports = router;
